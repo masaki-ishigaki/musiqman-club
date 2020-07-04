@@ -14,8 +14,8 @@ export default function Checkout(props) {
     const { error } = await stripe.redirectToCheckout({
       lineItems: [{ price: props.planID, quantity: 1 }],
       mode: "subscription",
-      successUrl: 'http://localhost:8000/',
-      cancelUrl: 'http://localhost:8000/'
+      successUrl: 'https://musiqmanjr-club.netlify.app/success',
+      cancelUrl: 'https://musiqmanjr-club.netlify.app'
     })
 
     if (error) {
