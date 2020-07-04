@@ -1,2 +1,2 @@
-# musiqman-club
-Frontend for applying Musiqman Jr Club
+## General
+This is the frontend of Musiqman Jr. Club by Gatsby.
