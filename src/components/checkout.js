@@ -7,7 +7,9 @@ import Button from '@material-ui/core/Button'
 const stripePromise = loadStripe("pk_live_KWzYYT2MJSZeIfegjOoMl0j900LkV9eAWR")
 
 export default function Checkout(props) {
+
   const redirectToCheckout = async () => {
+    console.log(props.planID)
     const stripe = await stripePromise
     const { error } = await stripe.redirectToCheckout({
       lineItems: [{ price: props.planID, quantity: 1 }],

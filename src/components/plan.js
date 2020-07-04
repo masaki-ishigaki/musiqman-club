@@ -66,7 +66,7 @@ export default function Plan(props) {
               </CardContent>
               { content.btnDisp
                 ? <CardActions className={classes.button}>
-                    <Checkout planId={content.planID} />
+                    <Checkout planID={content.planID} />
                   </CardActions>
                 : <div></div>
               }
