@@ -92,7 +92,7 @@ const patronProjectPlan = [
       }
     ],
     btnDisp: true,
-    planID: 'plan_HL0owG3ZM5xUeb'
+    planID: 'price_1H18SlBPaPMi6BaLZL0aiX2Y'
   },
   {
     planName: 'ゴールド',
@@ -112,7 +112,7 @@ const patronProjectPlan = [
       }
     ],
     btnDisp: true,
-    planID: 'plan_HL0tsgUg0WbIas'
+    planID: 'price_1H18W9BPaPMi6BaL6ATIMI2q'
   },
   {
     planName: 'ブラック',
@@ -132,7 +132,7 @@ const patronProjectPlan = [
       }
     ],
     btnDisp: true,
-    planID: 'price_1GzgfTBPaPMi6BaLx0Ukwtbv'
+    planID: 'price_1H18WOBPaPMi6BaLpMMRIhLI'
   },
   {
     planName: 'パラディウム',
@@ -148,7 +148,7 @@ const patronProjectPlan = [
       }
     ],
     btnDisp: true,
-    planID: 'price_1Gzgg8BPaPMi6BaL6IDpWt7q'
+    planID: 'price_1H18WzBPaPMi6BaLMGulLEfV'
   },
   {
     planName: 'エクストラプラン',
