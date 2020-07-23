@@ -34,45 +34,50 @@ export default function Plan(props) {
 
   return (
     <Grid container spacing={4}>
-        {props.contents.map((content, index) => (
-          <Grid item key={index} xs={12} sm={6} md={4}>
-            <Card className={classes.card}>
-              <CardHeader
-                title={
-                  <Typography component="div" align="center">
-                    <Box fontWeight="fontWeightBold" fontSize={20}>
-                      {content.planName}
-                    </Box>
-                  </Typography>
-                }
-              />
-              <CardContent className={classes.cardContent}>
-                <Typography variant="subtitle1" component="h2" align="center">
-                  {content.price}
+      <Grid item  xs={12}>
+        <Typography>
+          （※)申し込み頂いてから、数日以内に確認メールを送らさせていただきます。
+        </Typography>
+      </Grid>
+      {props.contents.map((content, index) => (
+        <Grid item key={index} xs={12} sm={6} md={4}>
+          <Card className={classes.card}>
+            <CardHeader
+              title={
+                <Typography component="div" align="center">
+                  <Box fontWeight="fontWeightBold" fontSize={20}>
+                    {content.planName}
+                  </Box>
                 </Typography>
-                <Typography variant="subtitle1" component="h2">
-                  {'<Menu>'}
-                </Typography>
-                <ul>
-                  {content.menu.map((item, index) => (
-                    <li key={index}>
-                      <Typography variant="body2">{item.discription}</Typography>
-                      {item.appendix.map((elment, index) => (
-                        <Typography variant="body2" key={index}>{elment}</Typography>
-                      ))}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-              { content.btnDisp
-                ? <CardActions className={classes.button}>
-                    <Checkout planID={content.planID} />
-                  </CardActions>
-                : <div></div>
               }
-            </Card>
-          </Grid>
-        ))}
+            />
+            <CardContent className={classes.cardContent}>
+              <Typography variant="subtitle1" component="h2" align="center">
+                {content.price}
+              </Typography>
+              <Typography variant="subtitle1" component="h2">
+                {'<Menu>'}
+              </Typography>
+              <ul>
+                {content.menu.map((item, index) => (
+                  <li key={index}>
+                    <Typography variant="body2">{item.discription}</Typography>
+                    {item.appendix.map((elment, index) => (
+                      <Typography variant="body2" key={index}>{elment}</Typography>
+                    ))}
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+            { content.btnDisp
+              ? <CardActions className={classes.button}>
+                  <Checkout planID={content.planID} />
+                </CardActions>
+              : <div></div>
+            }
+          </Card>
+        </Grid>
+      ))}
     </Grid>
   )
 }
