@@ -4,6 +4,7 @@ import Header from '../components/header'
 import Explanation from '../components/explanation'
 import Plan from '../components/plan'
 import Appendix from '../components/appendix'
+import SpecificCommerce from '../components/specific-commerce'
 
 import { makeStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
@@ -18,9 +19,8 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Musiqman Jr.
+        2020 "musiqman Jr." All Rights Reserved
       </Link>{' '}
-      {new Date().getFullYear()}
       {'.'}
     </Typography>
   )
@@ -71,6 +71,9 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(10, 0, 6)
     }
   },
+  spcificCommerce: {
+    padding: theme.spacing(4, 0, 6),
+  },
   footer: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
@@ -87,7 +90,7 @@ const patronProjectPlan = [
         appendix: ['-> 未発表Jr.オリジナル楽曲デモ、スタジオ録音&LIVE音源、など(毎月更新)', '-> 楽曲の使用権の販売も応相談']
       },
       {
-        discription: 'Liveスケジュールの事前告知サイトへのアクセス権',
+        discription: 'Liveスケジュールの事前告知(申し込み時のメールアドレスに連絡させていただきます)',
         appendix: []
       }
     ],
@@ -103,7 +106,7 @@ const patronProjectPlan = [
         appendix: []
       },
       {
-        discription: '個人的な演奏依頼をお引き受けします(個人宅から会社の会議室までどこまでも)',
+        discription: '倶楽部メンバー向け、Jr.のラジオ番組的な(笑) "Radio Jr."を配信',
         appendix: ['-> Jr.の歌に関して、詩曲やアルバムに関する哲学やエピソードやツアー先からの発信', '-> また、現役シンガーやこれから歌を志す方からの質問もありありです。']
       },
       {
@@ -199,6 +202,9 @@ export default function Index() {
             </Container>
             <div className={classes.appendix}>
               <Appendix />
+            </div>
+            <div className={classes.spcificCommerce}>
+              <SpecificCommerce />
             </div>
           </div>
         </main>
