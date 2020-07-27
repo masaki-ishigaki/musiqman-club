@@ -36,7 +36,7 @@ export default function Plan(props) {
     <Grid container spacing={4}>
       <Grid item  xs={12}>
         <Typography>
-          （※)申し込み頂いてから、数日以内に確認メールを送らさせていただきます。
+          （※)申し込み頂いてから、数日以内に確認メールをお送りいたします。
         </Typography>
       </Grid>
       {props.contents.map((content, index) => (
